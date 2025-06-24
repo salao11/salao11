@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salão 11</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <a href="#home" class="logo">
+      <img src="florlogo.png" alt="Logotipo Salão 11" class="logocabecalho" />
+    </a>
+    <input type="checkbox" id="nav-toggle" />
+    <label for="nav-toggle" class="hamburger" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+  
+
+  <section class="home" id="home">
+    <div class="logo-home">
+      <img src="logosf.png" alt="Logo do Salão" />
+    </div>
+    <div class="chamada">
+      <h1>Seja bem-vindo ao Salão 11</h1>
+      <p>O Salão 11 é mais do que um espaço de beleza — é um ambiente que une cuidado, estilo e bem-estar. Fundado com o propósito de oferecer um atendimento diferenciado e acolhedor, o salão busca se destacar pela qualidade dos serviços e pela experiência completa que proporciona aos seus clientes.</p>
+    </div>
+  </section>
+
+  <section class="servicos" id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="galeria-servicos">
+      <img src="corte2.jpeg" alt="Corte feminino estilizado" class="cortes" />
+      <img src="corte3.jpeg" alt="Corte feminino moderno" class="cortes" />
+      <img src="corte4.jpeg" alt="Coloração capilar" class="cortes" />
+    </div>
+    <div class="cabelo">
+      <p>Oferecemos serviços como tintura, progressiva e alisamento, realizados com produtos de qualidade e por profissionais capacitados. Aqui, cada transformação é feita com atenção à saúde dos fios e ao desejo de quem confia em nosso trabalho. Porque no Salão 11, você é protagonista da sua beleza.</p>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <h2>Fale Conosco</h2>
+    <p>📍 Latitude: -23.725000, Longitude: -46.762100</p>
+    <p>📲 <a href="https://wa.me/5511976558311" target="_blank">Chamar no WhatsApp</a> | <a href="https://www.instagram.com/salao_11_?igsh=MTg4N2Z0dWdxN21ybQ==" target="_blank">Instagram</a></p>
+    <div class="mapa">
+      <iframe src="https://maps.google.com/maps?q=-23.725000,-46.762100&z=15&output=embed" allowfullscreen loading="lazy" style="border:0; border-radius:8px;" width="100%" height="300"></iframe>
+    </div>
+      <div class="botoes">
+        <h3>Agende seu horário</h3>
+          <div class="horario" >
+            <a href="https://api.whatsapp.com/send?phone=5511976558311" target="_blank">Agendar Agora</a>
+         </div>
+      </div>
+  </section>
+
+  <!-- Botões flutuantes -->
+  <a href="https://api.whatsapp.com/send?phone=5511976558311" class="icon" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://www.instagram.com/salao_11_?igsh=MTg4N2Z0dWdxN21ybQ==" class="insta" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <footer>
+    <p>&copy; 2025 Salão 11. Todos os direitos reservados.</p>
+    <p>Desenvolvido por <a href="https://gitdoguxta.github.io/Tcc/" target="_blank">Lumina.dev</a></p>
+  </footer>
+
+  <!-- VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper></div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+</body>
+</html>
