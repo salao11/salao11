@@ -195,7 +195,6 @@ footer {
   font-size: 14px;
 }
 footer a { color: #000; }
-
 /* Responsividade */
 @media (max-width: 1024px) {
   .galeria-servicos img {
@@ -204,7 +203,11 @@ footer a { color: #000; }
 }
 
 @media (max-width: 768px) {
-  .hamburger { display: flex; }
+  .hamburger {
+    display: flex;
+    z-index: 1001; /* garante que fique na frente */
+  }
+
   .nav {
     position: absolute;
     top: 60px;
@@ -215,23 +218,38 @@ footer a { color: #000; }
     display: none;
     padding-top: 10px;
   }
-  #nav-toggle:checked + .hamburger + .nav {
-    display: block;
+
+  
+  #nav-toggle:checked ~ .nav {
+    display: flex;
   }
-  .nav a { margin: 10px 0; }
+
+  .nav a {
+    margin: 10px 0;
+    text-align: center;
+  }
+
   .logo-home {
     display: none;
   }
+
   .home {
     flex-direction: column;
+    padding: 20px;
   }
+
   .chamada {
     width: 100%;
     padding: 20px;
     font-size: 16px;
   }
+
   .galeria-servicos img {
     width: 100%;
+    max-width: none;
+  }
+}
+
     max-width: none;
   }
 }
